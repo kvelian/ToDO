@@ -1,6 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c88e082f-5fb7-462f-84eb-8409009223da" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Board/Board.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Board/ListTitle/EditableListTitle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Board/ListTitle/ListTitle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Board/ListTitle/ListTitleContainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Board/ListTitle/listTitle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Board/Lists/Items/DoneItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Board/Lists/Items/EditableItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Board/Lists/Items/Item.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Board/Lists/Items/ItemContainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Board/Lists/Items/item.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Board/Lists/List.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Board/Lists/list.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Board/board.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Board/utils/array.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/buttons/Button.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/buttons/styles/forListItems.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/buttons/styles/forListTitle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1xlyWR0S2RfK1LCoU9J6ZmKEp9e" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="C:/usr" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/buttons/styles" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\bortsova\Desktop\projects\todo\src\components\buttons\styles" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\bortsova\Desktop\projects\todo\src\components\buttons\styles" />
+      <recent name="C:\Users\bortsova\Desktop\projects\todo\src\components\buttons" />
+      <recent name="C:\Users\bortsova\Desktop\projects\todo\src\components\Board" />
+      <recent name="C:\Users\bortsova\Desktop\projects\todo\src\components\Board\Lists" />
+      <recent name="C:\Users\bortsova\Desktop\projects\todo\src\components\lists" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c88e082f-5fb7-462f-84eb-8409009223da" name="Default Changelist" comment="" />
+      <created>1630944001631</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1630944001631</updated>
+      <workItem from="1630944004511" duration="1994000" />
+      <workItem from="1631360302253" duration="110801000" />
+      <workItem from="1632817706168" duration="8000" />
+      <workItem from="1633696024841" duration="3198000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>

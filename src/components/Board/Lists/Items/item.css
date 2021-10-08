@@ -1,0 +1,81 @@
+.item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+
+    width: 100%;
+    min-height: auto;
+
+    background: #EEAF51;
+    border-radius: 5px;
+}
+
+.item:hover .buttonDoneItem {
+    opacity: 1;
+}
+
+.item:hover .buttonDeleteItem {
+    opacity: 1;
+}
+
+.changeItemValueTextArea {
+    width: 100%;
+    height: 22px;
+    margin: 5px;
+
+    resize: none;
+    overflow: hidden;
+    font-size: 18px;
+    text-align: right;
+
+    color: #636259;
+    background-color: transparent;
+    border: 2px solid #E9E1D3;
+}
+
+.changeItemValueTextArea-validationError {
+    border: 2px solid #ad4127;
+}
+
+.changeItemValueTextArea:focus {
+    outline: none;
+    border: 2px solid #636259;
+}
+
+/*.changeItemValueTextArea::-webkit-scrollbar {*/
+/*    width: 5px;*/
+/*    background-color: transparent; }*/
+
+/*.changeItemValueTextArea::-webkit-scrollbar-thumb {*/
+/*    background-color: #E9E1D3; }*/
+
+/*.changeItemValueTextArea:focus::-webkit-scrollbar-thumb {*/
+/*    background-color: #636259; }*/
+
+.doneItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+
+    width: 100%;
+    min-height: 40px;
+
+    background: #E9E1D3;
+    border-radius: 5px;
+}
+
+.doneItem:hover .buttonUnDoneItem {
+    opacity: 1;
+}
+
+.doneItemSpan {
+    width: 100%;
+
+    color: #A9A395;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

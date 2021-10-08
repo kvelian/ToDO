@@ -1,0 +1,37 @@
+.buttonChangeList {
+    height: 100%;
+
+    font-size: 20px;
+
+    color: #636259;
+}
+
+.buttonDeleteList {
+    width: 25px;
+    height: 20px;
+    position: relative;
+
+    margin-right: 7px;
+
+    background-size: 19px 19px;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3Csvg width='19' height='19' viewBox='0 0 19 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='3.28224' y1='16.0194' x2='15.7805' y2='3.23322' stroke='%23636259' stroke-width='3.5' stroke-linecap='square'/%3E%3Cpath d='M15.9724 15.8279L3.14441 3' stroke='%23636259' stroke-width='3.5' stroke-linecap='square'/%3E%3C/svg%3E%0A");
+    opacity: 0.3;
+}
+
+.buttonDeleteList:hover {
+    opacity: 1;
+}
+
+.buttonDoneChangeList {
+    width: 25px;
+    height: 20px;
+    position: relative;
+
+    margin-right: 5px;
+
+    background-size: 24px 20px;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3Csvg width='21' height='15' viewBox='0 0 21 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.2229 0L21 2.64191L8.00897 15L0 7.3814L2.77713 4.73949L8.00897 9.71627L18.2229 0Z' fill='%23EEAF51'/%3E%3C/svg%3E%0A");
+}
+
