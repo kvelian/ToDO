@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import React from 'react';
 
 import {ItemContainer} from "./Items/ItemContainer";
 import {ButtonAddItem} from "../../buttons/Button";
@@ -16,32 +16,35 @@ const makeItem = (value) => {
     }
 }
 
-export const List = () => {
-    const [items, setItems] = useState([makeItem("item1")]);
+export class List extends React.Component {
 
-    const addItem = (value) => setItems([...items, makeItem(value)])
+    state = {items: [makeItem("item1")]};
 
-    const editItem = (item) => setItems(editElement(items, item))
+    addItem = (value) => this.setState({items: [...this.state.items, makeItem(value)]})
 
-    const deleteItem = (item) => setItems(deleteElement(items, item))
+    editItem = (item) => this.setState({items: editElement(this.state.items, item)})
 
-    return (
-        <>
-            <ButtonAddItem onClick={() => {
-                addItem()
-            }}/>
-            <div className="items">
-                {items.filter(x => x.done === false).map(item => {
-                        return <ItemContainer item={item} editItem={editItem} deleteItem={deleteItem}/>
-                    }
-                )}
-            </div>
-            <div className="doneItems">
-                {items.filter(x => x.done === true).map(item => {
-                        return <ItemContainer item={item} editItem={editItem}/>
-                    }
-                )}
-            </div>
-        </>
-    )
+    deleteItem = (item) => this.setState({items: deleteElement(this.state.items, item)})
+
+    render() {
+        return (
+            <>
+                <ButtonAddItem onClick={() => {
+                    this.addItem()
+                }}/>
+                <div className="items">
+                    {this.state.items.filter(x => x.done === false).map(item => {
+                            return <ItemContainer item={item} editItem={this.editItem} deleteItem={this.deleteItem}/>
+                        }
+                    )}
+                </div>
+                <div className="doneItems">
+                    {this.state.items.filter(x => x.done === true).map(item => {
+                            return <ItemContainer item={item} editItem={this.editItem}/>
+                        }
+                    )}
+                </div>
+            </>
+        )
+    }
 }

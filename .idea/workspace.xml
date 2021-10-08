@@ -2,31 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c88e082f-5fb7-462f-84eb-8409009223da" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Board/Board.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Board/ListTitle/EditableListTitle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Board/ListTitle/ListTitle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Board/ListTitle/ListTitleContainer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Board/ListTitle/listTitle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Board/Lists/Items/DoneItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Board/Lists/Items/EditableItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Board/Lists/Items/Item.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Board/Lists/Items/ItemContainer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Board/Lists/Items/item.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Board/Lists/List.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Board/Lists/list.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Board/board.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Board/utils/array.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/buttons/Button.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/buttons/styles/forListItems.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/buttons/styles/forListTitle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Board/Board.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/Board.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Board/ListTitle/EditableListTitle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/ListTitle/EditableListTitle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Board/ListTitle/ListTitle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/ListTitle/ListTitle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Board/ListTitle/ListTitleContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/ListTitle/ListTitleContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Board/Lists/Items/DoneItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/Lists/Items/DoneItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Board/Lists/Items/EditableItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/Lists/Items/EditableItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Board/Lists/Items/Item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/Lists/Items/Item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Board/Lists/Items/ItemContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/Lists/Items/ItemContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Board/Lists/List.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/Lists/List.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Board/Lists/list.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/Lists/list.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/buttons/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/buttons/Button.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +30,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -80,19 +73,6 @@
       <recent name="C:\Users\bortsova\Desktop\projects\todo\src\components\lists" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -110,5 +90,8 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

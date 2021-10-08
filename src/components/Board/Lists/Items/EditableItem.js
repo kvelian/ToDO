@@ -1,33 +1,37 @@
-import {useState} from 'react';
+import React from 'react';
 
 import {Button} from "../../../buttons/Button";
 
 import "./item.css"
 
-export const EditableItem = ({item, setIsEdit, editItem}) => {
-    const [inputValue, setInputValue] = useState(item.value)
+export class EditableItem extends React.Component {
 
-    function auto_grow(element) {
+    state = {inputValue: this.props.item.value};
+
+    setInputValue = (value) => this.setState({inputValue: value})
+
+    auto_grow = (element) => {
         element.style.height = "5px";
-        element.style.height = (element.scrollHeight)+"px";
+        element.style.height = (element.scrollHeight) + "px";
     }
 
-    return (
-        <div className="item">
+    render() {
+        return (
+            <div className="item">
             <textarea className="changeItemValueTextArea" maxLength="100"
                       onChange={(e) => {
-
-                          auto_grow(e.target)
-                          setInputValue(e.target.value)
+                          this.auto_grow(e.target)
+                          this.setInputValue(e.target.value)
                       }}
-                       value={inputValue} required="required"/>
+                      value={this.state.inputValue} required="required"/>
 
-            <Button className="buttonDoneChangeItem" onClick={() => {
-                if (inputValue) {
-                    editItem({...item, value: inputValue})
-                    setIsEdit(false)
-                }
-            }}/>
-        </div>
-    );
+                <Button className="buttonDoneChangeItem" onClick={() => {
+                    if (this.state.inputValue) {
+                        this.props.editItem({...this.props.item, value: this.state.inputValue})
+                        this.props.setIsEdit(false)
+                    }
+                }}/>
+            </div>
+        );
+    }
 }

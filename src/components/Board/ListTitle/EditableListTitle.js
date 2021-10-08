@@ -1,18 +1,23 @@
-import {useState} from 'react';
+import React from 'react';
 
 import { Button } from "../../buttons/Button";
 
-export const EditableListTitle = ({className, list, setIsEdit, editList}) => {
-    const [inputValue, setInputValue] = useState(list.name)
-    return (
-        <div className={className}>
-            <Button className="buttonDoneChangeList" onClick={() => {
-                editList({...list, name: inputValue})
-                setIsEdit(false)
-            }}/>
-            <input maxLength="40" onChange={(e) => {
-                setInputValue(e.target.value)
-            }} value={inputValue}/>
-        </div>
-    );
+export class EditableListTitle extends React.Component {
+    state = {inputValue: this.props.list.name};
+
+    setInputValue = (value) => this.setState({inputValue: value})
+
+    render() {
+        return (
+            <div className={this.props.className}>
+                <Button className="buttonDoneChangeList" onClick={() => {
+                    this.props.editList({...this.props.list, name: this.state.inputValue})
+                    this.props.setIsEdit(false)
+                }}/>
+                <input maxLength="40" onChange={(e) => {
+                    this.setInputValue(e.target.value)
+                }} value={this.state.inputValue}/>
+            </div>
+        );
+    }
 }

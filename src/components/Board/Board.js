@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import React from "react";
 
 import {List} from "./Lists/List";
 import {Button} from "../buttons/Button"
@@ -16,33 +16,35 @@ const makeList = (value) => {
     }
 }
 
-export const Board = () => {
-    const [lists, setLists] = useState([makeList("list1")]);
+export class Board extends React.Component {
+    state = {lists: [makeList("list1")]};
 
-    const addList = (name) => setLists([...lists, makeList(name)])
+    addList = (name) => this.setState({lists: [...this.state.lists, makeList(name)]})
 
-    const editList = (list) => setLists(editElement(lists, list))
+    editList = (list) => this.setState({lists: editElement(this.state.lists, list)})
 
-    const deleteList = (list) => setLists(deleteElement(lists, list))
+    deleteList = (list) => this.setState({lists: deleteElement(this.state.lists, list)})
 
-    return (
-        <>
-            <div className='lists'>
-                {lists.map((list) => {
-                        return (
-                            <div className='list'>
-                                <ListTitleContainer list={list} editList={editList} deleteList={deleteList}/>
-                                <List/>
-                            </div>
-                        )
-                    }
-                )}
-            </div>
-            <Button onClick={() => {
-                addList("New list")
-            }}>
-                Add list +
-            </Button>
-        </>
-    )
+    render() {
+        return (
+            <>
+                <div className='lists'>
+                    {this.state.lists.map((list) => {
+                            return (
+                                <div className='list'>
+                                    <ListTitleContainer list={list} editList={this.editList} deleteList={this.deleteList}/>
+                                    <List/>
+                                </div>
+                            )
+                        }
+                    )}
+                </div>
+                <Button onClick={() => {
+                    this.addList("New list")
+                }}>
+                    Add list +
+                </Button>
+            </>
+        )
+    }
 }

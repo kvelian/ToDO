@@ -1,12 +1,17 @@
-import { useState } from 'react';
+import React from 'react';
 
-import { ListTitle } from "./ListTitle";
-import { EditableListTitle } from "./EditableListTitle";
+import {ListTitle} from "./ListTitle";
+import {EditableListTitle} from "./EditableListTitle";
 
-export const ListTitleContainer = ({list, editList, deleteList}) => {
-    const [isEdit, setIsEdit] = useState(false)
+export class ListTitleContainer extends React.Component {
+    state = {isEdit: false};
 
-    if (isEdit) return <EditableListTitle className='editableListTitle' list={list} setIsEdit={setIsEdit} editList={editList}/>
+    setIsEdit = (value) => this.setState({isEdit: value})
 
-    return <ListTitle className='listTitle' list={list} setIsEdit={setIsEdit} deleteList={deleteList}/>
+    render() {
+        if (this.state.isEdit) return <EditableListTitle className='editableListTitle' list={this.props.list}
+                                                         setIsEdit={this.setIsEdit} editList={this.props.editList}/>
+        return <ListTitle className='listTitle' list={this.props.list} setIsEdit={this.setIsEdit}
+                          deleteList={this.props.deleteList}/>
+    }
 }
